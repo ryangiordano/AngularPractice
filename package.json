@@ -6,7 +6,7 @@
     "repository": "ssh://git@bitbucket.org/CaldwellYSR/wedding.git",
     "angular-cli": {},
     "scripts": {
-        "start": "ng serve",
+        "start": "ng serve -p 4700",
         "lint": "tslint \"src/**/*.ts\"",
         "test": "ng test",
         "pree2e": "webdriver-manager update",
