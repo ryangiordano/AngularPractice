@@ -1,0 +1,7 @@
+<div id="slideshow-container" ngClass="slideshow-container">
+    <div app-slideshow-item 
+        ngClass="{{ slide.className }}"
+        *ngFor="let slide of slides"
+        [slide]="slide">
+    </div>
+</div>

@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { SlideshowComponent } from './slideshow/slideshow.component';
+import { SlideshowItemComponent } from './slideshow/slideshow-item.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        SlideshowComponent,
+        SlideshowItemComponent
     ],
     imports: [
         BrowserModule,
