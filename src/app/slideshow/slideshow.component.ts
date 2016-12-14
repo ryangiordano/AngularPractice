@@ -14,12 +14,15 @@ export class SlideshowComponent implements AfterContentInit{
     constructor() { }
 
     ngAfterContentInit() {
-        let active = 0; 
-        setInterval(() => {
-            this.slides[active].className = "slide-item";
-            this.slides[active + 1].className = "slide-item active";
-            active++;
-        }, 8000);
+        let i = 0;
+        this.changeSlide(i);
+    }
+
+    changeSlide(i) {
+        this.slides[i].className = "slide-item";
+        i = (i + 1) % this.slides.length;
+        this.slides[i].className = "slide-item active";
+        setTimeout(this.changeSlide.bind(this, i), 7000);
     }
 
 }
